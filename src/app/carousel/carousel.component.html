@@ -1,0 +1,34 @@
+<div class="carousel-container" *ngIf="products && products.length > 0">
+  <div *ngFor="let product of products; let i = index" class="img fade">
+    <a routerLink="/details/{{ product.id }}">
+      <img
+        [src]="product.imageUrl"
+        alt="img"
+        [ngClass]="{ 'image-active': selectedIndex === i }"
+      />
+    </a>
+    <h1 [ngClass]="{ 'image-active': selectedIndex === i }">
+      {{ product.name }}
+    </h1>
+  </div>
+
+  <div class="carousel-dot-container" *ngIf="indicator">
+    <span
+      *ngFor="let dot of products; let i = index"
+      class="dot"
+      [ngClass]="{ active: selectedIndex === i }"
+      (click)="selectImage(i)"
+    ></span>
+  </div>
+
+  <button *ngIf="controls" class="btn-carousel btn-prev">
+    <mat-icon class="icon-carousel icon-prev" (click)="onPrevClick()"
+      >chevron_left</mat-icon
+    >
+  </button>
+  <button *ngIf="controls" class="btn-carousel btn-next">
+    <mat-icon class="icon-carousel icon-next" (click)="onNextClick()"
+      >chevron_right</mat-icon
+    >
+  </button>
+</div>

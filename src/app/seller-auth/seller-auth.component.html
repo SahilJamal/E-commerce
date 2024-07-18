@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="signup" *ngIf="!showLogin">
+    <form action="" [formGroup]="signup" (ngSubmit)="signUp(signup.value)">
+      <h1>Seller Sign Up</h1>
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Enter Your Name"
+          formControlName="name"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          placeholder="Enter Your Email"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          placeholder="Enter Your Password"
+          formControlName="password"
+        />
+      </mat-form-field>
+      <br />
+      <span>Already have account?</span
+      ><a mat-button (click)="openLogin()">Click Here</a>
+      <br />
+      <button mat-raised-button color="primary" style="margin-top: 1em">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <div class="signin" *ngIf="showLogin">
+    <form [formGroup]="signin" (ngSubmit)="signIn(signin.value)">
+      <h1>Seller Sign In</h1>
+      <p style="color: red" *ngIf="errorMessage != ''">{{ errorMessage }}</p>
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          type="text"
+          matInput
+          required
+          formControlName="username"
+          placeholder="Enter Your Name"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          formControlName="userpassword"
+          required
+          placeholder="Enter Your Password"
+        />
+      </mat-form-field>
+      <br />
+      <span>Don't have account?</span
+      ><a mat-button (click)="openLogin()">Click Here</a>
+      <br />
+      <button mat-raised-button color="primary" style="margin-top: 1em">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

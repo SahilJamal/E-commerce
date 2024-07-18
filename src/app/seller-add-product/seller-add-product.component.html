@@ -1,0 +1,86 @@
+<div *ngIf="addProductMessage !== ''" class="message">
+  <h3>{{ addProductMessage }}</h3>
+</div>
+<div class="container">
+  <form [formGroup]="formData" (ngSubmit)="addProduct(formData.value)">
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input
+        type="text"
+        matInput
+        required
+        formControlName="name"
+        placeholder="Enter Product Name"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Price</mat-label>
+      <input
+        type="text"
+        matInput
+        required
+        formControlName="price"
+        placeholder="Enter Product Price"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Color</mat-label>
+      <input
+        type="text"
+        matInput
+        required
+        formControlName="color"
+        placeholder="Enter Product Color"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Category</mat-label>
+      <input
+        type="text"
+        matInput
+        required
+        formControlName="category"
+        placeholder="Enter Product Category"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Discription</mat-label>
+      <textarea
+        type="text"
+        matInput
+        required
+        formControlName="description"
+        placeholder="Enter Product Discription"
+      ></textarea>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-input" appearance="outline">
+      <mat-label>Image Url</mat-label>
+      <input
+        type="text"
+        matInput
+        required
+        formControlName="imageUrl"
+        placeholder="Enter Product Name"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <button mat-raised-button color="primary">Add Product</button>
+  </form>
+</div>

@@ -1,0 +1,44 @@
+.mat-toolbar{
+ justify-content: space-between;   
+}
+
+.mat-toolbar .serarch{
+    margin-top: 1em;
+}
+
+.mat-toolbar .serarch mat-form-field{
+    width: 400px;
+}
+
+.sellerlinks span{
+    font-size: .9em;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .mat-toolbar .serarch mat-form-field{
+        width: 200px;
+    }
+    .sellerlinks span{
+        font-size: .75em;
+    }
+
+    .sellerlinks a{
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mat-toolbar .serarch mat-form-field{
+        width: 100px;
+    }
+}

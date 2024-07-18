@@ -1,0 +1,46 @@
+.conatiner{
+    padding: 20px;
+    height: 81.5vh;
+    display: flex;
+    gap: 2rem;
+}
+
+.conatiner .left{
+    height: 100%;
+    width: 40%;
+}
+
+.conatiner .left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.conatiner .rigth{
+    height: 100%;
+    width: 55%;
+    font-size: 20px;
+}
+
+.conatiner .rigth h1{
+    font-size: xx-large;
+}
+
+.conatiner .rigth .color h5{
+    border: 3px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.quantity-group{
+    margin: 10px 0 10px 0;
+}
+
+.quantity-group input{
+    width: 40px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

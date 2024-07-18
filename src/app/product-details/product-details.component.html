@@ -1,0 +1,36 @@
+<div class="conatiner" *ngIf="productData">
+  <div class="left">
+    <img src="{{ productData.imageUrl }}" alt="img" />
+  </div>
+  <div class="rigth">
+    <h1>{{ productData.name }}</h1>
+    <h3>Price : {{ productData.price }}</h3>
+    <div class="color">
+      Color:
+      <h5 [style.backgroundColor]="productData.color"></h5>
+    </div>
+    <h6>Category : {{ productData.category }}</h6>
+    <h6>Description : {{ productData.description }}</h6>
+    <a
+      mat-stroked-button
+      color="primary"
+      (click)="addToCart()"
+      *ngIf="!removeCart"
+      >Add to Cart</a
+    >
+    <a
+      mat-stroked-button
+      color="primary"
+      *ngIf="removeCart"
+      (click)="removeToCart()"
+      >Remove From Cart</a
+    >
+    <a mat-stroked-button color="accent">By Now</a>
+
+    <div class="quantity-group">
+      <a mat-mini-fab (click)="addQuntity()"><mat-icon>add</mat-icon></a>
+      <input type="text" [value]="quantity" disabled />
+      <a mat-mini-fab (click)="subQuntity()"><mat-icon>remove</mat-icon></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,250 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "sahil",
+      "email": "sahiljamal@gmail.com",
+      "password": "sahil@sahil"
+    }
+  ],
+  "products": [
+    {
+      "name": "Nothing",
+      "price": "30000",
+      "color": "black",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg",
+      "id": 8
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 9
+    },
+    {
+      "name": "Samsung Galaxy M34 5G",
+      "price": "14999",
+      "color": "lightblue",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51JaSbauK3L._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 10
+    },
+    {
+      "name": "Status Polypropylene Anti Slip Floor Door Mat",
+      "price": "99",
+      "color": "blue",
+      "category": "Materesses",
+      "description": "Good quality Mat\n",
+      "imageUrl": "https://m.media-amazon.com/images/I/513ZiHfRfqL._SY300_SX300_QL70_FMwebp_.jpg",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "name": "Jamal",
+      "email": "jamal@gmail.com",
+      "password": "jamal@jamal",
+      "id": 1
+    },
+    {
+      "name": "Husnain",
+      "email": "husnain@gmail.com",
+      "password": "husnain@husnain",
+      "id": 2
+    },
+    {
+      "name": "Kamal",
+      "email": "kamal@gmail.com",
+      "password": "kamal@kamal",
+      "id": 3
+    },
+    {
+      "name": "Laiba",
+      "email": "laiba@gmail.com",
+      "password": "laiba@laiba",
+      "id": 4
+    },
+    {
+      "name": "sahil",
+      "email": "sahil@gmail.com",
+      "password": "sahil@sahil",
+      "id": 5
+    },
+    {
+      "name": "Shayan",
+      "email": "shayan@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "abc",
+      "id": 7
+    },
+    {
+      "name": "you",
+      "email": "you@gmail.com",
+      "password": "you",
+      "id": 8
+    },
+    {
+      "name": "kgf",
+      "email": "kgf@gmail.com",
+      "password": "kgf",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "name": "Samsung Galaxy M34 5G",
+      "price": "14999",
+      "color": "lightblue",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51JaSbauK3L._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 10,
+      "id": 1
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 9,
+      "id": 2
+    },
+    {
+      "name": "Nothing",
+      "price": "30000",
+      "color": "black",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 8,
+      "id": 3
+    },
+    {
+      "name": "Status Polypropylene Anti Slip Floor Door Mat",
+      "price": "99",
+      "color": "blue",
+      "category": "Materesses",
+      "description": "Good quality Mat\n",
+      "imageUrl": "https://m.media-amazon.com/images/I/513ZiHfRfqL._SY300_SX300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 11,
+      "id": 4
+    },
+    {
+      "name": "Nothing",
+      "price": "30000",
+      "color": "black",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 6,
+      "productId": 9,
+      "id": 6
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 6,
+      "productId": 9,
+      "id": 7
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 6,
+      "productId": 9,
+      "id": 8
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "userId": 6,
+      "productId": 9,
+      "id": 9
+    },
+    {
+      "name": "realme narzo 60X 5G",
+      "price": "12999",
+      "color": "lightgreen",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg",
+      "quantity": 1,
+      "productId": 9,
+      "userId": 7,
+      "id": 10
+    },
+    {
+      "name": "Nothing",
+      "price": "30000",
+      "color": "black",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 7,
+      "id": 11
+    },
+    {
+      "name": "Nothing",
+      "price": "30000",
+      "color": "black",
+      "category": "mobile",
+      "description": "good mobile",
+      "imageUrl": "https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg",
+      "quantity": 1,
+      "productId": 8,
+      "userId": null,
+      "id": 12
+    }
+  ]
+}

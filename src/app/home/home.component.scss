@@ -1,0 +1,33 @@
+.Products{
+    display: grid;
+    gap: 2rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2em;
+}
+
+.example-card {
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  mat-card-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  mat-card-content{
+    text-align: center;
+  }
+
+  @media screen and (min-width:768px){
+    .Products{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    }

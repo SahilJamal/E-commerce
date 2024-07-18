@@ -1,0 +1,64 @@
+<mat-toolbar color="primary">
+  <a mat-button routerLink="home" style="font-size: 1em">E-Comerse</a>
+  <div class="serarch" *ngIf="menuType === 'default' || 'user'">
+    <form action="">
+      <mat-form-field>
+        <mat-label>Search</mat-label>
+        <input
+          type="text"
+          (keyup)="searchProduct($event)"
+          (keydown)="submitSearch($event)"
+          matInput
+          [matAutocomplete]="auto"
+          [formControl]="myControl"
+          placeholder="Enter here..."
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="userlink" [ngSwitch]="menuType">
+    <div class="userlinks" *ngSwitchCase="'default'">
+      <a mat-button routerLink="home">Home</a>
+      <a mat-button routerLink="seller-auth">Seller</a>
+      <span><a mat-button routerLink="user-auth">Sign Up</a></span>
+      <a mat-button routerLink="home"
+        ><mat-icon
+          [matBadge]="cartItems"
+          [matBadgeHidden]="cartItems === 0"
+          matBadgeSize="medium"
+          >shopping_cart</mat-icon
+        ></a
+      >
+    </div>
+
+    <div class="userlinks" *ngSwitchCase="'user'">
+      <span style="font-size: medium">Hello {{ userName | titlecase }} !!</span>
+      <a mat-button routerLink="home">Home</a>
+      <a mat-button routerLink="home"
+        ><mat-icon
+          [matBadge]="cartItems"
+          [matBadgeHidden]="cartItems === 0"
+          matBadgeSize="medium"
+          >shopping_cart</mat-icon
+        ></a
+      >
+      <span
+        ><a mat-stroked-button (click)="userLogout()" color="accent"
+          >Log Out</a
+        ></span
+      >
+    </div>
+
+    <div class="sellerlinks" *ngSwitchCase="'seller'">
+      <span>Hello {{ sellerName | titlecase }} !!</span>
+      <a mat-button routerLink="/seller-home">List</a>
+      <a mat-button routerLink="seller-add-product">Add Product</a>
+      <a mat-stroked-button color="accent" (click)="signOut()">Logout</a>
+    </div>
+  </div>
+</mat-toolbar>

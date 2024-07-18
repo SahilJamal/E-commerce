@@ -1,0 +1,37 @@
+<app-carousel [products]="products" [autoSlide]="true"></app-carousel>
+<div class="Products" *ngIf="allProducts && allProducts.length > 0">
+  <mat-card
+    class="example-card"
+    *ngFor="
+      let product of allProducts
+        | paginate : { itemsPerPage: 3, currentPage: page }
+    "
+  >
+    <img
+      mat-card-image
+      src="{{ product.imageUrl }}"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content>
+      <h4>{{ product.name }}</h4>
+      <p>{{ product.price | currency : "INR" }}</p>
+      <p>{{ product.color }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a
+        routerLink="/details/{{ product.id }}"
+        mat-raised-button
+        mat-button
+        color="primary"
+        >View Details</a
+      >
+      <a mat-raised-button mat-button color="accent">Add To Cart</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<pagination-controls
+  style="display: flex; justify-content: end"
+  (pageChange)="page = $event"
+  class="d-flex justify-content-end"
+/>
